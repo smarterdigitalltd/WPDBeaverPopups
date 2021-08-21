@@ -1,0 +1,21 @@
+/**
+ * Set outer wrap in builder
+ */
+.single-#{$cpt}.#{$cpt}__modal--active .#{$cpt}__outer {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  height: 100vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .fl-builder-edit & {
+    z-index: 5;
+    height: calc(100vh - #{$beaver_builder_bar_height})
+  }
+
+  html:not(.fl-builder-edit) & {
+    height: calc(100vh - #{$wp_admin_bar_height})
+  }
+}

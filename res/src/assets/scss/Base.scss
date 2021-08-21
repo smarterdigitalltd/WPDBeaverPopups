@@ -1,0 +1,53 @@
+/**
+ * Variables
+ */
+$cpt: 'wpd-bb-popup';
+$wp_admin_bar_height: 32px;
+$beaver_builder_bar_height: 43px;
+
+/**
+ * Setup animations
+ */
+@import '~jbox/Source/jBox.css';
+@import 'jBox';
+@import 'BeaverBuilder';
+@import 'ModalPopup';
+@import 'FlyoutPopup';
+
+/**
+ * .popup--enabled added conditionally to module. Cursor: pointer added as
+ * we remove the href attr from these buttons
+ */
+.popup--enabled .fl-button {
+  cursor: pointer;
+}
+
+/**
+ * If a popup is assigned to a button, and later the popup is deleted,
+ * a class is assigned to the button
+ */
+html:not(.fl-builder-edit) .wpd-orphaned-popup-button {
+  display: none !important;
+}
+
+/**
+ * Animations - kick the animations into action (animations in dynamic css file)
+ */
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+  -webkit-backface-visibility: hidden;
+}
+
+/**
+ * Hide the popup elements on the page
+ */
+body:not(.single-#{$cpt}) .#{$cpt}__outer {
+  display: none;
+}
+
+/**
+ * Hide Themer elements
+ */
+body.single-#{$cpt} > header.fl-builder-content,
+body.single-#{$cpt} > footer.fl-builder-content {
+  display: none;
+}

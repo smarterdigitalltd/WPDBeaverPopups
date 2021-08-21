@@ -1,0 +1,70 @@
+/**
+ * Styles for when builder is open
+ */
+.fl-builder-edit.single-#{$cpt} {
+	/**
+     * Hide all modules for popup CPT
+     */
+	.fl-builder-block-module {
+
+		// Hide social buttons (as they try and share the the wrong URL
+		&[data-type="social-buttons"] {
+			display: none !important;
+		}
+	}
+
+	/**
+     * Hide certain settings in settings forms
+     */
+	#fl-builder-settings-section-row_effects {
+		display: none;
+	}
+
+	/*
+	* Height for Disable on Devices Settings on BB version 1 & 2
+	*/
+	.fl-builder-settings-fields select[name="popup_disable_on_devices[]"] {
+		height: 70px !important;
+	}
+
+	/*
+	* Width for Disable on Devices Settings on BB version 1
+	*/
+	&.wpd-bb-version--1 .fl-builder-settings-fields select[name="popup_disable_on_devices[]"] {
+		width: 110px;
+	}
+
+	/*
+	* Glow effect for Popup Options Button
+ 	*/
+	@-webkit-keyframes WPDPulseBoxShadow {
+		0% { -webkit-box-shadow: 0 0 10px rgba(255,171,74,0.2); }
+		50% { -webkit-box-shadow: 0 0 10px rgba(255,171,74,0.99); }
+		100% { -webkit-box-shadow: 0 0 10px rgba(255,171,74,0.2); }
+	}
+
+	@keyframes WPDPulseBoxShadow {
+		0% { box-shadow: 0 0 10px rgba(255,171,74,0.2); }
+		50% { box-shadow: 0 0 10px rgba(255,171,74,0.99); }
+		100% { box-shadow: 0 0 10px rgba(255,171,74,0.2); }
+	}
+
+	.wpd-bb-popup-options-not-clicked {
+		-webkit-animation: WPDPulseBoxShadow 3s infinite ease-in-out;
+		-o-animation: WPDPulseBoxShadow 3s infinite ease-in-out;
+		-ms-animation: WPDPulseBoxShadow 3s infinite ease-in-out;
+		-moz-animation: WPDPulseBoxShadow 3s infinite ease-in-out;
+		animation: WPDPulseBoxShadow 3s infinite ease-in-out;
+	}
+
+	/**
+	 * Text based toggles
+	 */
+	.wpd-toggle-value {
+		opacity: 0.3;
+
+		&.wpd-selected {
+			opacity: 1;
+		}
+	}
+}

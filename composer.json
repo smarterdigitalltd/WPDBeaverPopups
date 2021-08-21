@@ -1,0 +1,46 @@
+{
+    "name": "wpd/beaver-popups",
+    "description": "Create popups with Beaver Builder",
+    "type": "project",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Doug Belchamber",
+            "email": "doug@smarter.uk.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"config": {
+		"bitbucket-oauth": {
+			"bitbucket.org": {
+				"consumer-key": "wvm5RBK3KWFamfZHc2",
+				"consumer-secret": "tSf9zWC4M6DXTe9kVvS2A6EKrVVJrjd8"
+			}
+		}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url":  "git@bitbucket.org:smarterdigital/wpd-toolset-package.git"
+		},
+		{
+			"type": "vcs",
+			"url":  "git@bitbucket.org:smarterdigital/wpd-toolset-admin-notice-utilities.git"
+		}
+	],
+	"require": {
+		"smarterdigital/wpd-toolset/package": "dev-master",
+		"smarterdigital/wpd-toolset/utilities/admin-notice": "dev-master"
+	},
+	"require-dev": {
+		"symfony/var-dumper": "3.4.x-dev"
+	},
+    "autoload": {
+		"files": [
+			"utils/general.php"
+		],
+        "psr-4": {
+            "WPD\\BeaverPopups\\": "app"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.DS_Store
+vendor/
+node_modules/
+dist/
+.idea
+npm-debug.log
+yarn-error.log
+.php_cs.cache

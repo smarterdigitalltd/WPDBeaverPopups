@@ -1,0 +1,33 @@
+{
+    "extends": "standard",
+    "plugins": [
+        "html"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6
+    },
+    "globals": {
+        "Vue": true,
+        "VueRouter": true,
+        "Vuex": true,
+        "jQuery": true,
+        "console": true,
+        "wp": true,
+        "window": true,
+        "document": true,
+        "moment": true
+    },
+    "rules": {
+        "brace-style": "off",
+        "no-console": "off",
+        "no-mixed-operators": "off",
+        "no-multi-spaces": "off",
+        "no-unused-vars": "warn",
+        "no-undef": "warn",
+        "indent": ["warn", 4],
+        "key-spacing": "off",
+        "new-cap": "off",
+		"no-tabs": "off"
+    }
+}

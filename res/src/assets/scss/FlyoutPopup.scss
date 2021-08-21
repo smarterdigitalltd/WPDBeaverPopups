@@ -1,0 +1,6 @@
+/**
+ * Set some mood lighting for body on fly out modals
+ */
+.single-#{$cpt}.#{$cpt}__fly-out--active {
+  background: #CCC;
+}

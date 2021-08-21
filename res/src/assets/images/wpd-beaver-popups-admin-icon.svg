@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="497px" height="497px" viewBox="0 0 497 497" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(7.000000, 7.000000)">
+            <g id="beaverpopups-admin-icon">
+                <rect id="Rectangle-path" stroke="#FFFFFF" stroke-width="15" x="0.5" y="0.5" width="481.438" height="481.438"></rect>
+                <path d="M166.219,128.427 L213.168,175.382 L175.368,213.182 L128.419,166.228 L93.579,201.666 L93.579,93.579 L201.651,93.579 L166.219,128.427 L166.219,128.427 Z M93.579,277.563 L93.579,385.649 L201.651,385.649 L166.219,350.506 L213.168,303.846 L175.368,265.746 L128.419,313.001 L93.579,277.563 L93.579,277.563 Z M280.491,385.649 L388.859,385.649 L388.859,277.563 L353.425,313.001 L306.771,265.75 L268.68,303.85 L315.925,350.51 L280.491,385.649 L280.491,385.649 Z M388.859,201.666 L388.859,93.579 L280.491,93.579 L315.925,128.427 L268.68,175.382 L306.771,213.182 L353.425,166.227 L388.859,201.665 L388.859,201.665 L388.859,201.666 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
